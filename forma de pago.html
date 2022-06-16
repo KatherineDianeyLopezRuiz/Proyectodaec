@@ -1,0 +1,54 @@
+<!--Karla Valeria Escalante Alvarado
+14 Junio 2022
+4AMP-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Forma de pago</title>
+		<script type="text/javascript">
+			function tarjeta()
+			{
+				window.open("tarjeta.html");
+			}
+			function oxxo()
+			{
+				window.open("oxxo.html");
+			}
+			function regresar()
+			{
+				window.open("index.html");
+			} 
+		</script>
+	</head>
+	<body>
+		<style type="text/css">
+			body
+			{
+				background-color:#FDECDA;
+			}
+			h1
+			{
+				font-family:"Arial"; align-content: center;
+			}
+			input[type="button"]
+	 		{
+	 			width:80px; border:px; height:40px; background:#C9E9FC;  font-size:15px; font-family:"Arial"; 
+	 		}
+		</style>
+		<center>
+		<h1>¿Cual sera su forma de pago?</h1>
+		<br>
+		<input type="button" value="Tarjeta" onclick="tarjeta()" style="margin-right: 100px">
+		<input type="button" value="Oxxo" onclick="oxxo()" style="margin-left: 100px">
+		<br>
+		<br>
+		<div align="center"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Former_Visa_%28company%29_logo.svg/288px-Former_Visa_%28company%29_logo.svg.png" width=100 height=50 style="margin-right: 90px">
+		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwsxR2VUQ9BTjHLRSHc_7BijUTW_kZnO4x1xkdw4j8Vq9KA4HCnUsuBtDs5fHbkV3BWXw&usqp=CAU" width=100 height=50 style="margin-left: 90px"></div>
+		<br>
+		<br>
+		<br>
+		<br>
+		<input type="button" value="Regresar a menu" onclick="regresar()" style="width:150px; height:30px;">
+	</center>
+	</body>
+</html>

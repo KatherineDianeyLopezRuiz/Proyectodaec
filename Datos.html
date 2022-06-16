@@ -1,0 +1,150 @@
+<!--Abigail Felix Dominguez
+4ampr-->
+<!DOCTYPE html>
+<html>
+<head>
+	<!--Encabezado de la pagina-->
+	<script type="text/javascript">
+    //funcion del boton enviar
+    function enviar()
+      {
+        //se declara la variable del text field a la cual se le introducira el valor que se coloca en este
+        var info1=document.getElementById("info1").value;
+        if (info1=="") 
+        {
+          document.getElementById("elec1").innerHTML="Espacio incompleto";
+          document.getElementById("elec1").style.color="red";
+        }
+        else
+        {
+          document.getElementById("elec1").innerHTML="Espacio completo";
+          document.getElementById("elec1").style.color="green";
+        }
+        var info2=document.getElementById("info2").value;
+        if(info2=="")
+        {
+          document.getElementById("elec2").innerHTML="Espacio incompleto";
+          document.getElementById("elec2").style.color="red";
+        }
+        else
+        {
+          document.getElementById("elec2").innerHTML="Espacio completo";
+          document.getElementById("elec2").style.color="green";
+        }
+        var info3=document.getElementById("info3").value;
+        if(info3=="")
+        {
+          document.getElementById("elec3").innerHTML="Espacio incompleto";
+          document.getElementById("elec3").style.color="red";
+        }
+        else
+        {
+          document.getElementById("elec3").innerHTML="Espacio completo";
+          document.getElementById("elec3").style.color="green";
+        }
+        if(res1.checked==false && res2.checked==false && res3.checked==false)
+        {
+          document.getElementById("elec4").innerHTML="Espacio incompleto";
+          document.getElementById("elec4").style.color="red";
+        }
+        else
+        {
+          document.getElementById("elec4").innerHTML="Espacio completo";
+          document.getElementById("elec4").style.color="green";
+        }
+        var info5=document.getElementById("info5").value;
+        if(info5=="")
+        {
+          document.getElementById("elec5").innerHTML="Espacio incompleto";
+          document.getElementById("elec5").style.color="red";
+        }
+        else
+        {
+          document.getElementById("elec5").innerHTML="Espacio completo";
+          document.getElementById("elec5").style.color="green";
+        }
+        var info6=document.getElementById("info6").value;
+        if(info6=="")
+        {
+          document.getElementById("elec6").innerHTML="Espacio incompleto";
+          document.getElementById("elec6").style.color="red";
+        }
+        else
+        {
+          document.getElementById("elec6").innerHTML="Espacio completo";
+          document.getElementById("elec6").style.color="green";
+        }
+        
+        if(info1=="" && info2==""  && info3=="" && info4=="" && info5=="" && info6=="")
+        {
+          alert("su registro no ha podido ser completado");
+        }
+        else
+        {
+          alert("su registro ha sido completado");
+        }
+      }
+      //es la funcion que se le da a un boton para que te lleve a otro sitio web
+      function continuar()
+      {
+        window.open("Tienda.html");
+      } 
+     </script>
+</head>
+
+<body>
+<!--cuerpo del codigo-->
+<style type="text/css">
+ body
+{
+   background-color:#FDECDA;
+}
+</style>
+<center>
+<h1>Registrate</h1>
+<br>
+<img src="Logo.png" width=250 height=150>
+</center>
+    <br>
+    <br>
+    <h3> Introduzca sus datos aqui: </h3>
+<!--esta etiqueta label sirve para mostrar la informacion en la pagina-->
+<!--El text field sirve para que el usuario pueda introducir sus datos y la pagina los va a leer-->
+<label> Nombres: </label><input type="text" id="info1" placeholder="Por favor, ingresa aqui" />
+  <br>
+  <br>
+  <div id="elec1"></div>
+  <!--etiquetas para introducir un espacio entre las lineasde texto-->
+<label> Apellido paterno: </label><input type="text" id="info2" placeholder="Por favor, ingresa aqui" />
+  <br>
+  <br>
+  <div id="elec2"></div>
+<label> Apellido materno: </label><input type="text" id="info3" placeholder="Por favor, ingresa aqui" />
+  <br>
+  <br>
+  <div id="elec3"></div>
+<label> Sexo: </label>
+<input type="radio" name="opcion" id="res1">Femenino
+<input type="radio" name="opcion" id="res2">Masculino
+<input type="radio" name="opcion" id="res3">Prefiero no decirlo
+<div id="elec4"></div>
+  <br>
+  <br>
+
+<label> Correo electronico o num de telefono: </label><input type="text" placeholder="Por favor, ingresa aqui" id="info5"/>
+  <br>
+  <br>
+<div id="elec5"></div>
+<label> Crea una contrase&ntilde;a: </label><input type="text" placeholder="Por favor, ingresa aqui" id="info6">
+  <div id="elec6"></div>
+  <br>
+  <br>
+  <br>
+<input type="button" value="Enviar" onclick="enviar()">
+<br>
+<br>
+<hr>
+<center><input type="button" value="Continuar" onclick="continuar()"></center>
+</body>
+</html>
+

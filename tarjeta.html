@@ -1,0 +1,166 @@
+<!--Karla Valeria Escalante Alvarado
+14 Junio 2022
+4AMP-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Tarjeta</title>
+		<script type="text/javascript">
+			function enviar()
+			{
+				var dato1=document.getElementById("dato1").value;
+				if (dato1=="") 
+				{
+					document.getElementById("op1").innerHTML="Espacio incompleto";
+					document.getElementById("op1").style.color="red";
+				}
+				else
+				{
+					document.getElementById("op1").innerHTML="Espacio completo";
+					document.getElementById("op1").style.color="green";
+				}
+				var dato2=document.getElementById("dato2").value;
+				if(dato2=="")
+				{
+					document.getElementById("op2").innerHTML="Espacio incompleto";
+					document.getElementById("op2").style.color="red";
+				}
+				else
+				{
+					document.getElementById("op2").innerHTML="Espacio completo";
+					document.getElementById("op2").style.color="green";
+				}
+				var dato3=document.getElementById("dato3").value;
+				if(dato3=="")
+				{
+					document.getElementById("op3").innerHTML="Espacio incompleto";
+					document.getElementById("op3").style.color="red";
+				}
+				else
+				{
+					document.getElementById("op3").innerHTML="Espacio completo";
+					document.getElementById("op3").style.color="green";
+				}
+				var dato4=document.getElementById("dato4").value;
+				if(dato4=="")
+				{
+					document.getElementById("op4").innerHTML="Espacio incompleto";
+					document.getElementById("op4").style.color="red";
+				}
+				else
+				{
+					document.getElementById("op4").innerHTML="Espacio completo";
+					document.getElementById("op4").style.color="green";
+				}
+				var dato5=document.getElementById("dato5").value;
+				if(dato5=="")
+				{
+					document.getElementById("op5").innerHTML="Espacio incompleto";
+					document.getElementById("op5").style.color="red";
+				}
+				else
+				{
+					document.getElementById("op5").innerHTML="Espacio completo";
+					document.getElementById("op5").style.color="green";
+				}
+				var dato6=document.getElementById("dato6").value;
+				if(dato6=="")
+				{
+					document.getElementById("op6").innerHTML="Espacio incompleto";
+					document.getElementById("op6").style.color="red";
+				}
+				else
+				{
+					document.getElementById("op6").innerHTML="Espacio completo";
+					document.getElementById("op6").style.color="green";
+				}
+				var dato7=document.getElementById("dato7").value;
+				if(dato7=="")
+				{
+					document.getElementById("op7").innerHTML="Espacio incompleto";
+					document.getElementById("op7").style.color="red";
+				}
+				else
+				{
+					document.getElementById("op7").innerHTML="Espacio completo";
+					document.getElementById("op7").style.color="green";
+				}
+				if(dato1=="" && dato2==""  && dato3=="" && dato4=="" && dato5=="" && dato6=="" && dato7=="")
+				{
+					alert("su registro no ha podido ser completado");
+				}
+				else
+				{
+					alert("su registro ha sido completado");
+				}
+			}
+			function pago()
+			{
+				window.open("forma de pago.html");
+			} 
+			function regresar()
+			{
+				window.open("index.html");
+			} 
+		</script>
+	</head>
+	<body>
+	
+		<style type="text/css">
+			body
+			{
+				background-color: #FDECDA;
+			}
+			h1
+			{
+				font-family:"Arial"; align-content: center;
+			}
+			input[type="button"]
+	 		{
+	 			width:80px; border:px; height:40px; background:#C9E9FC;  font-size:15px; font-family:"Arial"; 
+	 		}
+		</style>
+		<h1>Datos del destinatario:</h1>
+		<label>Numero de tarjeta: </label>
+		<input type="text" placeholder="introduzca aqui" id="dato1">
+		<div id="op1"></div>
+		<br>
+		<br>
+		<label>Caducidad: </label>
+		<input type="text" placeholder="introduzca aqui" id="dato2">
+		<div id="op2"></div>
+		<br>
+		<br>
+		<label>Codigo de seguridad/CVV: </label>
+		<input type="text" placeholder="introduzca aqui" id="dato3">
+		<div id="op3"></div>
+		<br>
+		<br>
+		<label>Titular de la tarjeta: </label>
+		<input type="text" placeholder="introduzca aqui" id="dato4">
+		<div id="op4"></div>
+		<br>
+		<br>
+		<label>Direccion: </label>
+		<input type="text" placeholder="introduzca aqui" id="dato5">
+		<div id="op5"></div>
+		<br>
+		<br>
+		<label>Ciudad: </label>
+		<input type="text" placeholder="introduzca aqui" id="dato6">
+		<div id="op6"></div>
+		<br>
+		<br>
+		<label>Codigo postal: </label>
+		<input type="text" placeholder="introduzca aqui" id="dato7">
+		<div id="op7"></div>
+		<br>
+		<br>
+		<center>
+		<input type="button" value="Enviar" onclick="enviar()">
+		<hr>
+		<input type="button" value="Cancelar" onclick="pago()">
+		<input type="button" value="Completar" onclick="regresar()" style="width:90px; height:40px;">
+	</center>
+	</body>
+</html>

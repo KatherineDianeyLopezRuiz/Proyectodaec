@@ -1,0 +1,69 @@
+<!--Katherine Dianey Lopez Ruiz
+11 junio 2022
+4AMP-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Detalles</title>
+	</head>
+	<body>
+		<!--se abre etiqueta de estilo para darle diseño a la pagina-->
+		<style type="text/css">
+			/* 
+			se escriben los atributos para el diseño del fondo de la página
+			*/
+			body
+			{
+				background-color:#FDECDA;
+			}
+			/* 
+	 		se escriben los atributos para el diseño de el titulo
+	 		*/
+			h2
+	 		{
+	 			font-family:"Bell MT"; text-align: center;
+	 		}
+		</style>
+		<!--se coloca titulo de la pagina-->
+			<h2>Lentes cuadrados</h2>
+		<!--se coloca imagen del producto, despues se agrega el atributo ondblclick que al darle doble click a la imagen te lleve a otra imagen coon otro angulo del producto pero tambien se coloca el atributo onclick para al darle un click a la nueva imagen te regrese a la principal-->
+		<img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQSgRIVkk_Mji2zXCviWneX16V_-bQ40W4RuiZ9O-tqjx5BuArx0VpV-Fl8gu--11jh6QG0SdkcbzdGDNADYzmj63ZV3VKzkZNwViHi-OyPypqg8ra2cGq1qlo&usqp=CAE"
+		onclick="this.src='https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQSgRIVkk_Mji2zXCviWneX16V_-bQ40W4RuiZ9O-tqjx5BuArx0VpV-Fl8gu--11jh6QG0SdkcbzdGDNADYzmj63ZV3VKzkZNwViHi-OyPypqg8ra2cGq1qlo&usqp=CAE'"
+		ondblclick="this.src='https://m.media-amazon.com/images/I/51DxPUcygmL._AC_SX679_.jpg'"/width=450 height=350 align="left">
+		<!--se abre tabla para escribir dentro de ella los detalles del producto-->
+		<table>
+			<tr>
+			<td>Precio:</td>
+			<td>$800</td>
+			</tr>
+			<tr>
+				<td>Detalles:</td>
+				<td>
+					<!--se coloca una lista para mostrar los detalles ordenadamente-->
+					<ul>
+			    		<li>Color: Negro y Azul</li>
+			    		<li>Estilo: Cuadrados</li>
+			    	</ul>
+				</td>
+			</tr>
+		</table>
+		<!--Etiqueta para iniciar codigo de JS-->
+		<script type="text/javascript">
+			//se crea funcion para que al darle click al boton de regresar te lleve de vuelta a la pagina de la tienda
+			function regresar()
+			{
+				//se ejecuta ventana
+				window.open("Tienda.html");
+			}
+		</script>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<!--se crea boton para regresar a la pagina principal de la tienda-->
+		<input type="button" value="Regresar" onclick="regresar()">
+	</body>
+</html>

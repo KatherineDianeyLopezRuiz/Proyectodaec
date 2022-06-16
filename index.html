@@ -1,0 +1,73 @@
+<!--Katherine Dianey Lopez Ruiz
+07 Junio 2022
+4AMP-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Index</title>
+		<!--Etiqueta para iniciar codigo de JS-->
+		<script type="text/javascript">
+			//se crea funcion para que el boton de datos te lleve a otra ventana
+			function datos()
+			{
+				//se ejecuta ventana
+				window.open("Datos.html");
+			}
+			//se crea funcion para que un boton te lleve a la ventana de la pagina donde se encuentran las redes sociales
+			function redes()
+			{
+				//se ejecuta ventana
+				window.open("Redes.html");
+			}
+		</script>
+	</head>
+	<body>
+		<!--se abre etiqueta para insertar diseño a la pagina web-->
+		<style type="text/css">
+			/* 
+			se escriben los atributos para el diseño del fondo de la página
+			*/
+			body
+			{
+				background-color:#FDECDA; background-image: url(https://img.freepik.com/vector-gratis/flores-que-florecen-sobre-fondo-beige_53876-113758.jpg);
+			}
+			/* 
+			se escriben los atributos para el diseño de la tabla
+			*/
+	 		table
+	 		{
+		     	height: 100px; width: 800px; background-color:#C9E9FC; font-size:15px; border: 2px; border: groove; border-radius: 20px; text-align: center;
+		    }
+		    /* 
+	 		se escriben los atributos para el diseño de los botones
+	 		*/
+		    input[type="button"]
+	 		{
+	 			width:120px; height:20px; background-color:#C9E9FC;  font-size:15px; font-family:"Arial"; border-color:#C9E9FC; border:none;
+	 		}
+		</style>
+		<center>
+		<!--Etiqueta para iniciar codigo de JS-->
+		<script type="text/javascript">
+			//se indica que se presentara la fecha del sistema
+			document.write(new Date());
+		</script>
+		<br>
+		<br>
+		<!--se coloca la imagen del logo de la tienda-->
+		<img src="Logo.png" width=250 height=150>
+		<br>
+		<br>
+		<br>
+		<!--se crea tabla para agregar los botones del menu-->
+		<table>
+			<tr>
+				<!--boton para registrar tus datos-->
+				<td><input type="button" value="Iniciar sesion" onclick="datos()"></td>
+				<!--boton que te lleva a la pagina para promocionar redes sociales-->
+				<td><input type="button" value="Redes" onclick="redes()"></td>
+			</tr>
+		</table>
+		</center>
+	</body>
+</html>

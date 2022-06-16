@@ -1,0 +1,69 @@
+<!--Katherine Dianey Lopez Ruiz
+11 junio 2022
+4AMP-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Detalles</title>
+	</head>
+	<body>
+		<!--se abre etiqueta de estilo para darle diseño a la pagina-->
+		<style type="text/css">
+			/* 
+			se escriben los atributos para el diseño del fondo de la página
+			*/
+			body
+			{
+				background-color:#FDECDA;
+			}
+			/* 
+	 		se escriben los atributos para el diseño de el titulo
+	 		*/
+			h2
+	 		{
+	 			font-family:"Bell MT"; text-align: center;
+	 		}
+		</style>
+		<!--se coloca titulo de la pagina-->
+			<h2>Lentes triangulares</h2>
+		<!--se coloca imagen del producto, despues se agrega el atributo ondblclick que al darle doble click a la imagen te lleve a otra imagen coon otro angulo del producto pero tambien se coloca el atributo onclick para al darle un click a la nueva imagen te regrese a la principal-->
+		<img src="https://res.cloudinary.com/walmart-labs/image/upload/w_960,dpr_auto,f_auto,q_auto:best/mg/gm/3pp/asr/ec82dae4-70b6-4f70-89dd-5262c4193a38.098c6823dcd68413e28fac37741db6c1.jpeg?odnHeight=2000&odnWidth=2000&odnBg=ffffff"
+		onclick="this.src='https://res.cloudinary.com/walmart-labs/image/upload/w_960,dpr_auto,f_auto,q_auto:best/mg/gm/3pp/asr/ec82dae4-70b6-4f70-89dd-5262c4193a38.098c6823dcd68413e28fac37741db6c1.jpeg?odnHeight=2000&odnWidth=2000&odnBg=ffffff'"
+		ondblclick="this.src='https://img.ltwebstatic.com/images3_pi/2021/07/02/1625215234df9c165bdbf34e6d269eea88898e36c9_thumbnail_600x.webp'"/width=450 height=350 align="left">
+		<!--se abre tabla para escribir dentro de ella los detalles del producto-->
+		<table>
+			<tr>
+			<td>Precio:</td>
+			<td>$500</td>
+			</tr>
+			<tr>
+				<td>Detalles:</td>
+				<td>
+					<!--se coloca una lista para mostrar los detalles ordenadamente-->
+					<ul>
+			    		<li>Color: Blanco, Negro y Rojo</li>
+			    		<li>Estilo: triangulares</li>
+			    	</ul>
+				</td>
+			</tr>
+		</table>
+		<!--Etiqueta para iniciar codigo de JS-->
+		<script type="text/javascript">
+			//se crea funcion para que al darle click al boton de regresar te lleve de vuelta a la pagina de la tienda
+			function regresar()
+			{
+				//se ejecuta ventana
+				window.open("Tienda.html");
+			}
+		</script>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<!--se crea boton para regresar a la pagina principal de la tienda-->
+		<input type="button" value="Regresar" onclick="regresar()">
+	</body>
+</html>

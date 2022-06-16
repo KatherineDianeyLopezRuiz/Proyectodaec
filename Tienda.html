@@ -1,0 +1,522 @@
+<!--Katherine Dianey Lopez Ruiz
+07 junio 2022
+4AMP-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Tienda</title>
+		<!--Etiqueta para iniciar codigo de JS-->
+		<script type="text/javascript">
+			//se crean funciones para los botones de mostrar detalles de cada producto en una nueva ventana
+			function detpantmez()
+			{
+				//se ejecuta la ventana
+				window.open("Detpantmez.html");
+			}
+			function detpantneg()
+			{
+				window.open("Detpantneg.html");
+			}
+			function detpantves()
+			{
+				window.open("Detpanves.html");
+			}
+			function detpantaca()
+			{
+				window.open("Detpantaca.html");
+			}
+			function detpantbol()
+			{
+				window.open("Detpantbol.html");
+			}
+			function detbluslis()
+			{
+				window.open("Detbluslis.html");
+			}
+			function detbluselas()
+			{
+				window.open("Detbluselas.html");
+			}
+			function detbluscas()
+			{
+				window.open("Detbluscas.html");
+			}
+			function detblusbot()
+			{
+				window.open("Detblusbot.html");
+			}
+			function detblusdis()
+			{
+				window.open("Detblusdis.html");
+			}
+			function detlencir()
+			{
+				window.open("Detlentcir.html");
+			}
+			function detlenred()
+			{
+				window.open("Detlentred.html");
+			}
+			function detlentri()
+			{
+				window.open("Detlentri.html");
+			}
+			function detlenrec()
+			{
+				window.open("Detlenrec.html");
+			}
+			function detlencua()
+			{
+				window.open("Detlencua.html");
+			}
+			function detboldisrom()
+			{
+				window.open("Detboldisrom.html");
+			}
+			function detbolcad()
+			{
+				window.open("Detbolcad.html");
+			}
+			function detbolcol()
+			{
+				window.open("Detbolcol.html");
+			}
+			function detboldiscua()
+			{
+				window.open("Detboldiscua.html");
+			}
+			function detbolest()
+			{
+				window.open("Detbolest.html");
+			}
+			//se crean funciones para darle valor a cada producto-->
+			function agrpantmez()
+			{
+				document.getElementById("resultado").value=document.getElementById("resultado").value+200;
+			}
+			function agrpantneg()
+			{
+				document.getElementById("resultado").value=document.getElementById("resultado").value+400;
+			}
+			function agrpantves()
+			{
+				document.getElementById("resultado").value=document.getElementById("resultado").value+500;
+			}
+			function agrpantaca()
+			{
+				document.getElementById("resultado").value=document.getElementById("resultado").value+300;
+			}
+			function agrpantbol()
+			{
+				document.getElementById("resultado").value=document.getElementById("resultado").value+200;
+			}
+			function agrbluslis()
+			{
+				document.getElementById("resultado").value=document.getElementById("resultado").value+300;
+			}
+			function agrbluselas()
+			{
+				document.getElementById("resultado").value=document.getElementById("resultado").value+200;
+			}
+			function agrbluscas()
+			{
+				document.getElementById("resultado").value=document.getElementById("resultado").value+100;
+			}
+			function agrblusbot()
+			{
+				document.getElementById("resultado").value=document.getElementById("resultado").value+200;
+			}
+			function agrblusdis()
+			{
+				document.getElementById("resultado").value=document.getElementById("resultado").value+300;
+			}
+			function agrlencir()
+			{
+				document.getElementById("resultado").value=document.getElementById("resultado").value+900;
+			}
+			function agrlenred()
+			{
+				document.getElementById("resultado").value=document.getElementById("resultado").value+300;
+			}
+			function agrlentri()
+			{
+				document.getElementById("resultado").value=document.getElementById("resultado").value+500;
+			}
+			function agrlenrec()
+			{
+				document.getElementById("resultado").value=document.getElementById("resultado").value+700;
+			}
+			function agrlencua()
+			{
+				document.getElementById("resultado").value=document.getElementById("resultado").value+800;
+			}
+			function agrboldisrom()
+			{
+				document.getElementById("resultado").value=document.getElementById("resultado").value+500;
+			}
+			function agrbolcad()
+			{
+				document.getElementById("resultado").value=document.getElementById("resultado").value+800;
+			}
+			function agrbolcol()
+			{
+				document.getElementById("resultado").value=document.getElementById("resultado").value+1000;
+			}
+			function agrboldiscua()
+			{
+				document.getElementById("resultado").value=document.getElementById("resultado").value+400;
+			}
+			function agrbolest()
+			{
+				document.getElementById("resultado").value=document.getElementById("resultado").value+300;
+			}
+			//se crea funcion para que con un boton se pueda borrar lo que haya dentro del textfield
+			function borrar()
+			{
+				document.getElementById("resultado").value="";
+			}
+			//se crea funcion para sumar cada uno de los productos
+			function sumar()
+			{
+				document.getElementById("resultado").value=document.getElementById("resultado").value+"+";
+			}
+			//se crea una funcion para calcular el resultado y se define una variable donde se le asigna el valor que se introduzca al textfield el cual se evalua con el metodo eval()
+			function calcular()
+			{
+				var result=eval(document.getElementById("resultado").value);
+				document.getElementById("resultado").value=result;
+				alert("Su total a pagar es de: $"+result+" pesos");
+			}
+			//se crea funcion para mostrar fecha
+			function mostrar_fecha()
+			{
+			//se crea variable para para asignarle el valor del id 
+			var f=document.getElementById("fecha");
+			f.innerHTML=new Date();
+			}
+			//se crea funcion para que un boton te lleve al index principal
+			function pago()
+			{
+				window.open("forma de pago.html");
+			}
+		</script>
+	</head>
+	<body>
+		<!--se abre etiqueta para insertar diseño a la pagina web-->
+		<style type="text/css">
+			/* 
+			se escriben los atributos para el diseño del fondo de la página
+			*/
+			body
+			{
+				background-color:#FDECDA;
+			}
+			/* 
+			se escriben los atributos para el diseño de la tabla
+			*/
+	 		table
+	 		{
+		     	height: 200px; width: 200px; background-color: #C5C6C8; border: 2px; border: groove; border-radius: 20px:; border-spacing: 10px ; justify-content:center; 
+		    }
+			/* 
+			se escriben los atributos para el diseño del textfield
+			*/
+			input[type="text"] 
+			{
+				background-color:#FDECDA; width:300px; height:50px; font-size:15px;
+	 		}
+	 		/* 
+			se escriben los atributos para el diseño de los label
+			*/
+			label
+			{
+				background-color:#C5C6C8; color:black; display:flex; justify-content:center; align-items:center; font-size:15px; font-family:"Arial";
+	 		}
+	 		/* 
+	 		se escriben los atributos para el diseño de los botones
+	 		*/
+	 		input[type="button"]
+	 		{
+	 			width:80px; border:px; height:30px; background:#C9E9FC;  font-size:15px; font-family:"Arial"; 
+	 		}
+	 		/* 
+	 		se escriben los atributos para el diseño de el titulo
+	 		*/
+	 		h2
+	 		{
+	 			font-family:"Bell MT";
+	 		}
+	 		/* 
+	 		se escriben los atributos para el diseño de el titulo
+	 		*/
+	 		h5
+	 		{
+	 			font-family:"Arial"; color:#FF0000;
+	 		}
+	 		h3
+	 		{
+	 			font-family:"Bell MT";
+	 		}
+	 		/* 
+	 		se escriben los atributos para el diseño de el texto fijo
+	 		*/
+	 		tt
+	 		{
+	 			font-family:"Arial"; color:#FF0000;
+	 		}
+	 	</style>
+		<center>
+		<!--se coloca el titulo de la pagina-->
+		<h5>Atencion a cliente: 6442557698</h5>
+		<h2>Bienvenida, descubre nuestra coleccion de prendas y no pierdas la oportunidad de lucir genial!!</h2>
+		<!--se coloca una imagen con el logo de la pagina-->
+		<img src="Logo.png"  width=250 height=150>
+		<hr>
+		<p>
+		<!--se coloca un subtitulo-->
+		<tt>
+		----- Lo nuevo para ti -----
+		<tt>
+		<hr>
+		<!--Etiqueta para iniciar una tabla-->
+		<table>
+			<tr>
+				<!--se colocan las imagenes de cada producto, despues con un label se indica el nombre del mismo y su precio, luego se colocan 3 botones, uno para ver los detalles de los productos, otro para agregar el producto y el ultimo para sumar los productos, con todos los productos es el mismo proceso-->
+				<td><center><img src="https://img.ltwebstatic.com/images3_pi/2021/09/06/16309097604a7057ef5a00e73cf20879d64b9830f9_thumbnail_600x.webp" alt="pantalon" width=200 height=250>
+				<br>
+				<label>Pantalon mezclilla</label>
+				<label>$200.00</label>
+				<input type="button" value="Detalles" onclick="detpantmez()">
+				<input type="button" value="Agregar" onclick="agrpantmez()">
+				<hr>
+				<!--se coloco el atributo style para darle diferente diseño a ese boton-->
+				<input type="button" value="+" onclick="sumar()" style="width:30px; height:20px;">
+				<hr>
+				</td>
+				<td><center><img src="https://img.ltwebstatic.com/images3_pi/2021/06/28/16248466308ac39b84a40affd2a33f23dcde121a34_thumbnail_600x.webp" alt="pantalon trozado" width=200 height=250>
+				<br>
+				<label>Pantalon negro</label>
+				<label>$400.00</label>
+				<input type="button" value="Detalles" onclick="detpantneg()">
+				<input type="button" value="Agregar" onclick="agrpantneg()">
+				<hr>
+				<input type="button" value="+" onclick="sumar()" style="width:30px; height:20px;">
+				<hr>
+				</td>
+				<td><center><img src="https://img.ltwebstatic.com/images3_pi/2021/08/16/16290858967442842ce3a3e49ed8669d3b98e46283_thumbnail_600x.webp" alt="pantalon de vestir" width=200 height=250>
+				<br>
+				<label>Pantalon de vestir</label>
+				<label>$500.00</label>
+				<input type="button" value="Detalles" onclick="detpantves()">
+				<input type="button" value="Agregar" onclick="agrpantves()">
+				<hr>
+				<input type="button" value="+" onclick="sumar()" style="width:30px; height:20px;">
+				<hr>
+				</td>
+				<td><center><img src="https://img.ltwebstatic.com/images3_pi/2021/02/18/16136134953ffec0e2f17db3497523ebf05ef89a49_thumbnail_600x.webp" alt="pantalon de acampanado" width=200 height=250>
+				<br>
+				<label>Pantalon acampanado</label>
+				<label>$300.00</label>
+				<input type="button" value="Detalles" onclick="detpantaca()">
+				<input type="button" value="Agregar" onclick="agrpantaca()">
+				<hr>
+				<input type="button" value="+" onclick="sumar()" style="width:30px; height:20px;">
+				<hr>
+				</td>
+				<td><center><img src="https://img.ltwebstatic.com/images3_pi/2021/10/12/16340046019783b9fbcad4697a705a3580f46ba6e3_thumbnail_600x.webp" alt="pantalon con bolsas" width=200 height=250>
+				<br>
+				<label>Pantalon con bolsas</label>
+				<label>$200.00</label>
+				<input type="button" value="Detalles" onclick="detpantbol()">
+				<input type="button" value="Agregar" onclick="agrpantbol()">
+				<hr>
+				<input type="button" value="+" onclick="sumar()" style="width:30px; height:20px;">
+				<hr>
+				</td>
+			</tr>
+			<tr>
+				<td><center><img src="https://img.ltwebstatic.com/images3_pi/2022/03/11/1646998786ecb7df6f1c0b0c72e8fd65d3b4ca5d86_thumbnail_600x.webp" alt="blusa" width=200 height=250>
+				<br>
+				<label>Blusa con listones</label>
+				<label>$300.00</label>
+				<input type="button" value="Detalles" onclick="detbluslis()">
+				<input type="button" value="Agregar" onclick="agrbluslis()">
+				<hr>
+				<input type="button" value="+" onclick="sumar()" style="width:30px; height:20px;">
+				<hr>
+				</td>
+				<td><center><img src="https://img.ltwebstatic.com/images3_pi/2021/04/29/16196622242ec555648519561a1b172fabb8686c37_thumbnail_600x.webp" alt="blusa " width=200 height=250>
+				<br>
+				<label>Blusa con elastico</label>
+				<label>$200.00</label>
+				<input type="button" value="Detalles" onclick="detbluselas()">
+				<input type="button" value="Agregar" onclick="agrbluselas()">
+				<hr>
+				<input type="button" value="+" onclick="sumar()" style="width:30px; height:20px;">
+				<hr>
+				</td>
+				<td><center><img src="https://img.ltwebstatic.com/images3_pi/2021/07/30/162761617915bc328448fc0636994f56c46d97e456_thumbnail_600x.webp" alt="blusa casual" width=200 height=250>
+				<br>
+				<label>Blusa casual</label>
+				<label>$100.00</label>
+				<input type="button" value="Detalles" onclick="detbluscas()">
+				<input type="button" value="Agregar" onclick="agrbluscas()">
+				<hr>
+				<input type="button" value="+" onclick="sumar()" style="width:30px; height:20px;">
+				<hr>
+				</td>
+				<td><center><img src="https://img.ltwebstatic.com/images3_pi/2020/07/01/1593572634bcec16751b3c68234425b3507c444f75_thumbnail_600x.webp" alt="blusa botones" width=200 height=250>
+				<br>
+				<label>Blusa con botones</label>
+				<label>$200.00</label>
+				<input type="button" value="Detalles" onclick="detblusbot()">
+				<input type="button" value="Agregar" onclick="agrblusbot()">
+				<hr>
+				<input type="button" value="+" onclick="sumar()" style="width:30px; height:20px;">
+				<hr>
+				</td>
+				<td><center><img src="https://img.ltwebstatic.com/images3_pi/2021/03/03/16147466359d3d53d6c7b4d4eed09bca591658cda5_thumbnail_600x.webp" alt="blusa diseño" width=200 height=250>
+				<br>
+				<label>Blusa con dise&ntilde;o</label>
+				<label>$300.00</label>
+				<input type="button" value="Detalles" onclick="detblusdis()">
+				<input type="button" value="Agregar" onclick="agrblusdis()">
+				<hr>
+				<input type="button" value="+" onclick="sumar()" style="width:30px; height:20px;">
+				<hr>
+				</td>
+			</tr>
+			<tr>
+				<td><center><img src="https://cdn1.coppel.com/images/catalog/pm/9221373-1.jpg" alt="lentes circulares" width=250 height=200>
+				<br>
+				<label>Lentes circulares</label>
+				<label>$900.00</label>
+				<input type="button" value="Detalles" onclick="detlencir()">
+				<input type="button" value="Agregar" onclick="agrlencir()">
+				<hr>
+				<input type="button" value="+" onclick="sumar()" style="width:30px; height:20px;">
+				<hr>
+				</td>
+				<td><center><img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcR_UeObF6kURG6KddtiqkazxSLQAKg_oQI62oJ_zifhia11J9vV3wXuEAi4TDXpd0DeweJkFVrZN0-NJ5TFi7P5_vXyj45YeaTTTrl9NSfIKcfo0QAZqPpd&usqp=CAE" alt="Lentes redondos" width=250 height=200>
+				<br>
+				<label>Lentes redondos</label>
+				<label>$300.00</label>
+				<input type="button" value="Detalles" onclick="detlenred()">
+				<input type="button" value="Agregar" onclick="agrlenred()">
+				<hr>
+				<input type="button" value="+" onclick="sumar()" style="width:30px; height:20px;">
+				<hr>
+				</td>
+				<td><center><img src="https://res.cloudinary.com/walmart-labs/image/upload/w_960,dpr_auto,f_auto,q_auto:best/mg/gm/3pp/asr/ec82dae4-70b6-4f70-89dd-5262c4193a38.098c6823dcd68413e28fac37741db6c1.jpeg?odnHeight=2000&odnWidth=2000&odnBg=ffffff" alt="Lentes triangulares" width=250 height=200>
+				<br>
+				<label>Lentes triangulares</label>
+				<label>$500.00</label>
+				<input type="button" value="Detalles" onclick="detlentri()">
+				<input type="button" value="Agregar" onclick="agrlentri()">
+				<hr>
+				<input type="button" value="+" onclick="sumar()" style="width:30px; height:20px;">
+				<hr>
+				</td>
+				<td><center><img src="https://img.ltwebstatic.com/images3_pi/2021/06/03/162270518263e65a30ec60f3e0a216ce09b6d3b2c9.webp" alt="Lentes rectangulares" width=250 height=200>
+				<br>
+				<label>Lentes rectangulares</label>
+				<label>$700.00</label>
+				<input type="button" value="Detalles" onclick="detlenrec()">
+				<input type="button" value="Agregar" onclick="agrlenrec()">
+				<hr>
+				<input type="button" value="+" onclick="sumar()" style="width:30px; height:20px;">
+				<hr>
+				</td>
+				<td><center><img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQSgRIVkk_Mji2zXCviWneX16V_-bQ40W4RuiZ9O-tqjx5BuArx0VpV-Fl8gu--11jh6QG0SdkcbzdGDNADYzmj63ZV3VKzkZNwViHi-OyPypqg8ra2cGq1qlo&usqp=CAE" alt="Lentes cuadrados" width=250 height=200>
+				<br>
+				<label>Lentes cuadrados</label>
+				<label>$800.00</label>
+				<input type="button" value="Detalles" onclick="detlencua()">
+				<input type="button" value="Agregar" onclick="agrlencua()">
+				<hr>
+				<input type="button" value="+" onclick="sumar()" style="width:30px; height:20px;">
+				<hr>
+				</td>
+			</tr>
+			<tr>
+				<td><center><img src="https://img.ltwebstatic.com/images3_pi/2022/03/02/1646205600327653bc1721d248e647574c39ae3f20_thumbnail_600x.webp" alt="bolsa de rombos" width=250 height=200>
+				<br>
+				<label>Bolsa con dise&ntilde;o de rombos</label>
+				<label>$500.00</label>
+				<input type="button" value="Detalles" onclick="detboldisrom()">
+				<input type="button" value="Agregar" onclick="agrboldisrom()">
+				<hr>
+				<input type="button" value="+" onclick="sumar()" style="width:30px; height:20px;">
+				<hr>
+				</td>
+				<td><center><img src="https://img.ltwebstatic.com/images3_pi/2021/12/08/16389604001d8a8eab43b46820024b9bec1faf48b8_thumbnail_600x.webp" alt="Bolsa con cadena" width=250 height=200>
+				<br>
+				<label>Bolsa con cadena</label>
+				<label>$800.00</label>
+				<input type="button" value="Detalles" onclick="detbolcad()">
+				<input type="button" value="Agregar" onclick="agrbolcad()">
+				<hr>
+				<input type="button" value="+" onclick="sumar()" style="width:30px; height:20px;">
+				<hr>
+				</td>
+				<td><center><img src="https://img.ltwebstatic.com/images3_pi/2020/04/22/158752900037f4c611be02e64cac379e1625758fd0.webp" width=250 height=200>
+				<br>
+				<label>Bolsa de dos colores</label>
+				<label>$1000.00</label>
+				<input type="button" value="Detalles" onclick="detbolcol()">
+				<input type="button" value="Agregar" onclick="agrbolcol()">
+				<hr>
+				<input type="button" value="+" onclick="sumar()" style="width:30px; height:20px;">
+
+				<hr>
+				</td>
+				<td><center><img src="https://img.ltwebstatic.com/images3_pi/2021/11/16/16370677004720187675ef2254793091a01f20b560_thumbnail_600x.webp" width=250 height=200>
+				<br>
+				<label>Bolsa con dise&ntilde;o de cuadros</label>
+				<label>$400.00</label>
+				<input type="button" value="Detalles" onclick="detboldiscua()">
+				<input type="button" value="Agregar" onclick="agrboldiscua()">
+				<hr>
+				<input type="button" value="+" onclick="sumar()" style="width:30px; height:20px;">
+				<hr>
+				</td>
+			    <td><center><img src="https://img.ltwebstatic.com/images3_pi/2021/08/03/16279768517feb0e2c19f2cd9432166f541188c80e_thumbnail_600x.webp" alt="Bolsa estampado" width=250 height=200>
+				<br>
+				<label>Bolsa con estampado de vaca</label>
+				<label>$300.00</label>
+				<input type="button" value="Detalles" onclick="detbolest()">
+				<input type="button" value="Agregar" onclick="agrbolest()">
+				<hr>
+				<input type="button" value="+" onclick="sumar()" style="width:30px; height:20px;">
+				<hr>
+				</td>
+			</tr>
+		</center>
+		</table>
+		</center>
+		<center>
+		<!--se coloca el boton para eliminar lo que haya dentro del textfield-->
+		<input type="button" value="Eliminar" onclick="borrar()">
+		<!--se coloca boton para calcular el resultado de la suma de productos-->
+		<input type="button" value="Comprar" onclick="calcular()">
+		</center>
+		<hr>	
+		<!--se coloca el diseño para crear un recibo final-->
+		<h2>Recibo</h2>
+		<h3>Su total a pagar fue de:<h3>
+		<!--se crea textfield para mostrar el resultado de los productos comprados-->
+		<input type="text" id="resultado" disabled="disabled">
+		<!--en esta parte se colocara la fecha del sistema-->
+		<div id="fecha"></div>
+		<br>
+		<hr>
+		<br>
+		<!--se coloca boton que te llevara de regreso al index-->
+		<center><input type="button" value="Forma de pago" onclick="pago()" style="width:150px; height:30px;"></center>
+		<!--Etiqueta para iniciar codigo de JS donde se lleva a cabo la funcion de mostrar fecha-->
+		<script type="text/javascript">
+			//llamar fucion
+			mostrar_fecha();
+		</script>
+	</body>
+</html>

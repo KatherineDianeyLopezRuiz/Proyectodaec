@@ -1,0 +1,51 @@
+<!--Karla Valeria Escalante Alvarado
+14 Junio 2022
+4AMP-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Oxxo</title>
+		<script type="text/javascript">
+			function enviar()
+			{
+				alert("Tu pedido ha sido completado");
+			}
+			function pago()
+			{
+				window.open("forma de pago.html");
+			} 
+			function regresar()
+			{
+				window.open("index.html");
+			} 
+		</script>
+	</head>
+	<body>
+	
+		<style type="text/css">
+			body
+			{
+				background-color: #FDECDA;
+			}
+			h1
+			{
+				font-family:"Arial"; align-content: center;
+			}
+			input[type="button"]
+	 		{
+	 			width:80px; border:px; height:40px; background:#C9E9FC;  font-size:15px; font-family:"Arial"; 
+	 		}
+		</style>
+		<h1>Este es tu c&oacute;digo para pagar tu pedido, tienes tres d&iacute;as para usarlo antes de que caduque.</h1>
+		<center>
+			<img src="https://cdn2.unrealengine.com/p4-1600x999-847827840.png" width=1000 height=500>
+			<br>
+			<br>
+			<br>
+		<input type="button" value="Enviar" onclick="enviar()">
+		<hr>
+		<input type="button" value="Cancelar" onclick="pago()">
+		<input type="button" value="Completar" onclick="regresar()" style="width:90px; height:40px;">
+	</center>
+	</body>
+</html>
